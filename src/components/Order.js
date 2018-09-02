@@ -34,10 +34,10 @@ class Order extends Component {
           <div className="container col-sm-8">
             <div className='center'>
             <img src={unicorn} alt="Unicorn"/>
-              <p>
+              <div>
                 <h4>Order Placed!</h4>
                 <small> Unicorns are on the way </small>
-              </p>
+              </div>
               <table className="table center">
                 <thead>
                   <tr>

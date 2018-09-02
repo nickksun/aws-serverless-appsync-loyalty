@@ -94,14 +94,16 @@ const UnicornList = ({ unicorns, onChange }) => (
 const Total = ({ unicorns }) => (
  <table className="table table-borderless">
   <tbody>
-    <td className="text-right">
-      <span className="pr-1">Total:</span>
-      <span className="bg-light border border-secondary rounded p-2"> 
-        {unicorns.reduce((sum, i) => (sum += i.count * i.price), 0) }
-      </span>
-    </td>
+    <tr className="p-0">
+      <td className="text-right">
+        <span className="pr-1">Total:</span>
+        <span className="bg-light border border-secondary rounded p-2"> 
+          {unicorns.reduce((sum, i) => (sum += i.count * i.price), 0) }
+        </span>
+      </td>
+    </tr>
   </tbody>
-  </table>
+</table>
 )
 
 
